@@ -37,4 +37,13 @@ const x = characters.sort((a, b) => {
   }
 });
 
-console.log(x);
+const array1 = [9, 8, 7, 100, 6];
+const names = ["agua", "yorgut", "bacia", "coca"];
+console.log(array1.sort((a, b) => b - a));
+// a - b é na ordem correta
+// b - a é de trás p frnete
+console.log(
+  names.sort((a, b) => {
+    return a.localeCompare(b);
+  })
+);
